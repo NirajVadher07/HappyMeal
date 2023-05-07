@@ -4,9 +4,9 @@
 
 ## Steps to Download
 - Download Zip File
-- Create a directory 
+- Create a directory
 
-    `mkdir HappyMeal`
+    `mkdir xampp\htdocs\HappyMeal`
 
 - Unzip the file in `HappyMeal` folder
 - Start Apache and MySQL server
