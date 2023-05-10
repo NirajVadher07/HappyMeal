@@ -61,7 +61,7 @@
         }
 ?>
     
-    <div class="flex justify-center items-center min-h-screen bg-blue-300">
+    <div class="flex justify-center items-center min-h-screen bg-[url('../images/dummy.png')]">
         <div class="h-auto w-[400px] bg-white p-5 rounded-lg shadow-2xl">
             <div class="flex justify-end">
                 <a href="providerdetails.php?ProviderID=<?php echo $Providerid?>" class="flex w-[10%] p-[2px] justify-center rounded-md bg-[#EB9901] text-xs font-semibold text-white">Back</a>

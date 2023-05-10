@@ -11,10 +11,10 @@
   </head>
 
   <body>
-    <div class="flex items-center justify-center h-screen">
-      <div class="p-1 rounded shadow-lg bg-gradient-to-r from-purple-500 via-green-500 to-blue-500">
-        <div class="flex flex-col items-center p-10 space-y-2 bg-white text-4xl">         
-          <img src="../images/tick2.gif" alt="Your GIF" height="50%" width="50%" loop="1">
+    <div class="flex items-center justify-center h-[100vh]">
+      <div class="p-1 h-fit rounded-lg shadow-2xl bg-gradient-to-r from-purple-500 via-green-500 to-blue-500">
+        <div class="flex flex-col items-center justify-center rounded-lg p-10 space-y-2 bg-white text-4xl  h-full">         
+          <img src="../images/tick2.gif" alt="Your GIF" height="30%" width="30%" loop="1">
           <h1 class="text-4xl font-bold font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">Thank You !</h1>
           <p class="p-5 font-bold italic text-center">Order Confirmed<br> Enjoy Your Home-like Meal</p>
           <div class="flex justify-center items-center">
