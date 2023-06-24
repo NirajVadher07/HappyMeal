@@ -2,6 +2,8 @@
 
 ![Alt text](images/logo.png)
 
+![home page](images/HomePage.png)
+
 ## Steps to Download
 - Download Zip File
 - Create a directory
