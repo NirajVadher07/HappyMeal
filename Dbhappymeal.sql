@@ -12,18 +12,6 @@ CREATE TABLE Customers (
     ZipCode VARCHAR(10) NOT NULL    
 );
 
-INSERT INTO `customers` (`CustomerID`, `FirstName`, `LastName`, `Email`, `Gender`, `Phone`, `Password`, `Address`, `City`, `State`, `ZipCode`) VALUES
-(1, 'John', 'Doe', 'johndoe@example.com', 'Male', '555-1234', 'password123', '123 Main St', 'Anytown', 'CA', '12345'),
-(2, 'Hardi', 'Chudasama', 'chudasamahardi123@gmail.com', 'Female', '+917793810261', 'Hardi153', 'Mewada bramhan Kanya chhatralay', 'RAJKOT', 'Gujarat', '360007'),
-(3, 'Aarav', 'Sharma', 'aarav.sharma@example.com', 'Male', '+919876543210', 'AaravSharma@01', '123 Main St', 'Mumbai', 'Maharashtra', '400001'),
-(4, 'Kavya', 'Singh', 'kavya.singh@example.com', 'Female', '+919876543211', 'KavyaSingh@02', '456 Elm St', 'Delhi', 'Delhi', '110001'),
-(5, 'Amit', 'Patel', 'amit.patel@example.com', 'Male', '+919876543212', 'AmitPatel@03', '789 Oak St', 'Ahmedabad', 'Gujarat', '380001'),
-(6, 'Riya', 'Yadav', 'abc@gmail.com', 'Female', '+919753762912', 'AsDfG', 'aaa', 'junagadh', 'Gujarat', '362001'),
-(7, 'Niraj', 'Vadher', 'nirajvvadher0711@gmail.com', 'Male', '+916354787798', 'Niraj0711', 'block no.4, dev park', 'JAMNAGAR', 'Gujarat', '361006'),
-(8, 'Ami', 'Vadher', 'amivadher253@gmail.com', 'Female', '+919879143345', 'ami253', 'NR. RAMESHWAR SHIV TEMPLE , RAMESHWAR NAGAR , JAMNAGAR', 'JAMNAGAR', 'GUJARAT', '361008'),
-(9, 'Deep', 'Pajpani', 'pajpanideep@gmail.com', 'Male', '+918373132100', 'Deep@2002', 'C-404 Trinity ', 'Rajkot', 'Gujarat', '360007'),
-(10, 'VIJAY', 'VADHER', 'vijaykvadher@gmail.com', 'Male', '+919924907075', '123456', 'block no.4, dev park', 'Jamnagar', 'GUJARAT', '361001');
-
 
 CREATE TABLE TiffinProviders (
     ProviderID INT PRIMARY KEY AUTO_INCREMENT,
@@ -76,12 +64,6 @@ CREATE TABLE Orders (
     CONSTRAINT FK_Orders_Customers FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
     CONSTRAINT FK_Orders_Tiffins FOREIGN KEY (TiffinID) REFERENCES Tiffins(TiffinID)
 );
-INSERT INTO `orders` (`OrderID`, `CustomerID`, `TiffinID`, `OrderDate`, `LastDate`, `TotalAmount`) VALUES
-(1, 1, 1, '04-05-2023', '03-06-2023', 2850.00),
-(2, 2, 3, '04-05-2023', '03-06-2023', 5500.00),
-(3, 9, 2, '05-05-2023', '04-06-2023', 2850.00),
-(4, 2, 1, '06-05-2023', '05-06-2023', 2850.00),
-(5, 2, 2, '07-05-2023', '06-06-2023', 2850.00);
 
 CREATE TABLE admin (   
   username VARCHAR(50) NOT NULL PRIMARY KEY,
